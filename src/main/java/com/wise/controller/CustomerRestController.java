@@ -29,9 +29,22 @@ public class CustomerRestController {
     @ResponseBody
     public String test(@PathVariable String testid) {
         dbConnUtil.checkDatabaseConnection();
-//        Profile profile = profileRepository.findByFirstName("ABC");
-//        System.out.println("received profile as :"+profile);
+        Profile profile = profileRepository.findByFirstName("ABC");
+        System.out.println("received profile as :"+profile);
         return "fetching the customer info for -"+testid;
+    }
+
+    @RequestMapping(value =  "/insert/profile", method = RequestMethod.POST, headers =  "Accept=application/json")
+    @ResponseBody
+    public void updateScenarioMapping(@RequestBody Profile profile) throws Exception {
+        System.out.println("insert profile begins ...");
+        try {
+             profileRepository.save(profile);
+        } catch (Exception e) {
+            System.out.println("Exception while insert " + e.getMessage());
+            e.printStackTrace();
+            throw e;
+        }
     }
 
 }

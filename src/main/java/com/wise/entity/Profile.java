@@ -6,18 +6,20 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+
 @Table(name = "flc_reg_profile")
 public class Profile {
 
+    @Id
+    @Column(name = "StudentId")
+    private String studentId;
     @Column(name = "FirstName")
     private String firstName;
     @Column(name = "LastName")
     private String lastName;
     @Column(name = "DateOfBirth")
     private Date dateOfBirth;
-    @Id
-    @Column(name = "StudentId")
-    private String studentId;
+
     @Column(name = "HighSchoolName")
     private String highSchoolName;
     @Column(name = "YearOfFLCPassed")

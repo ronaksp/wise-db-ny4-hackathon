@@ -8,9 +8,9 @@ spring:
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
-#    hibernate:
-#      dialect: org.hibernate.dialect.SQLServer2012Dialect
-#      ddl-auto: create-drop
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      ddl-auto: none
 
 server:
   port: 8090
