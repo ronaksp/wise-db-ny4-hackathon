@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: wise-db-ny4
+  datasource:
+    url: jdbc:sqlserver://wiseflc.database.windows.net:1433;databaseName=WISE_FLCDB;
+    username: wiseflc@wiseflc
+    password: Hackathon@123
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+#    hibernate:
+#      dialect: org.hibernate.dialect.SQLServer2012Dialect
+#      ddl-auto: create-drop
+
+server:
+  port: 8090
+  servlet:
+    context-path: /wise-db-ny4
