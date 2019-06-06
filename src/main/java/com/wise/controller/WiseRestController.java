@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/wise")
+@CrossOrigin(origins = "*", maxAge = 4800, allowCredentials = "false")
 public class WiseRestController {
 
     @Autowired
