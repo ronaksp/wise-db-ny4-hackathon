@@ -11,6 +11,16 @@ public class NationalRegSurveyId implements Serializable {
     private int questionId;
     private Date surveyDate;
 
+    public NationalRegSurveyId() {
+    }
+
+    public NationalRegSurveyId(int personId, int surveyId, int questionId, Date surveyDate) {
+        this.personId = personId;
+        this.surveyId = surveyId;
+        this.questionId = questionId;
+        this.surveyDate = surveyDate;
+    }
+
     public int getPersonId() {
         return personId;
     }

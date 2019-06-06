@@ -17,7 +17,7 @@ public class NationalRegSurvey {
     private int surveyId;
 
     @Id
-    @Column(name = "questionId")
+    @Column(name = "questionid")
     private int questionId;
 
     @Id
