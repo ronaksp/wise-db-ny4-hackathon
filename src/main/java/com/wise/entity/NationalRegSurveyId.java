@@ -1,12 +1,15 @@
 package com.wise.entity;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.Objects;
 
 public class NationalRegSurveyId implements Serializable {
 
     private int personId;
     private int surveyId;
     private int questionId;
+    private Date surveyDate;
 
     public int getPersonId() {
         return personId;
@@ -32,9 +35,17 @@ public class NationalRegSurveyId implements Serializable {
         this.questionId = questionId;
     }
 
+    public Date getSurveyDate() {
+        return surveyDate;
+    }
+
+    public void setSurveyDate(Date surveyDate) {
+        this.surveyDate = surveyDate;
+    }
+
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(personId, surveyId, questionId, surveyDate);
     }
 
     @Override

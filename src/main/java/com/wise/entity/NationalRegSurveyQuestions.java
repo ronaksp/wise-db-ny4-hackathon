@@ -9,22 +9,22 @@ import java.util.Date;
 public class NationalRegSurveyQuestions {
 
     @Id
-    @Column(name = "SurveyId")
+    @Column(name = "surveyid")
     private int surveyId;
-    @Column(name = "CreatedOn")
+    @Column(name = "createdon")
     private Date createdOn;
-    @Column(name = "UpdatedOn")
+    @Column(name = "updatedon")
     private Date updatedOn;
-    @Column(name = "UpdatedBy")
+    @Column(name = "updatedby")
     private String updatedBy;
     @Id
-    @Column(name = "QuestionId")
+    @Column(name = "questionid")
     private int questionId;
-    @Column(name = "QuestionDetails")
+    @Column(name = "questiondetails")
     private String questionDetails;
-    @Column(name = "QuestionAnswerOptions")
+    @Column(name = "questionansweroptions")
     private String questionAnswerOptions;
-    @Column(name = "QuestionType")
+    @Column(name = "questiontype")
     private int questionType;
 
     public int getSurveyId() {

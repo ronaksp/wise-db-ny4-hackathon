@@ -11,37 +11,37 @@ import java.util.Date;
 public class NationalRegProfile {
 
     @Id
-    @Column(name = "PersonId")
+    @Column(name = "personid")
     private int personId;
-    @Column(name = "FirstName")
+    @Column(name = "firstname")
     private String firstName;
-    @Column(name = "LastName")
+    @Column(name = "lastname")
     private String lastName;
-    @Column(name = "DateOfBirth")
+    @Column(name = "dateofbirth")
     private Date dateOfBirth;
-    @Column(name = "EmailId")
+    @Column(name = "emailid")
     private String emailId;
-    @Column(name = "PhoneNumber")
+    @Column(name = "phonenumber")
     private String phoneNumber;
-    @Column(name = "Address")
+    @Column(name = "address")
     private String address;
-    @Column(name = "StudentId")
+    @Column(name = "studentid")
     private String studentId;
-    @Column(name = "HighschoolName")
+    @Column(name = "highschoolname")
     private String highschoolName;
-    @Column(name = "YearOfFLCPassed")
+    @Column(name = "yearofflcpassed")
     private int yearOfFLCPassed;
-    @Column(name = "HighestLevelOfEducation")
+    @Column(name = "highestlevelofeducation")
     private String highestLevelOfEducation;
-    @Column(name = "CollegeName")
+    @Column(name = "collegename")
     private String collegeName;
-    @Column(name = "YearOfGraduation")
+    @Column(name = "yearofgraduation")
     private int yearOfGraduation;
-    @Column(name = "CurrentJobOrg")
+    @Column(name = "Currentjoborg")
     private String currentJobOrg;
-    @Column(name = "CurrentJobTitle")
+    @Column(name = "currentjobtitle")
     private String currentJobTitle;
-    @Column(name = "Gender")
+    @Column(name = "gender")
     private String gender;
 
     public int getPersonId() {

@@ -9,21 +9,22 @@ import java.util.Date;
 public class NationalRegSurvey {
 
     @Id
-    @Column(name = "PersonId")
+    @Column(name = "personid")
     private int personId;
 
     @Id
-    @Column(name = "SurveyId")
+    @Column(name = "surveyid")
     private int surveyId;
 
     @Id
-    @Column(name = "QuestionId")
+    @Column(name = "questionId")
     private int questionId;
 
-    @Column(name = "SurveyDate")
+    @Id
+    @Column(name = "surveydate")
     private Date surveyDate;
 
-    @Column(name = "QuestionAnswer")
+    @Column(name = "questionanswer")
     private String questionAnswer;
 
     public int getPersonId() {
