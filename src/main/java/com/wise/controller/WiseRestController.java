@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/wise")
-public class CustomerRestController {
+public class WiseRestController {
 
     @Autowired
     CustomerService customerService;
@@ -25,7 +25,7 @@ public class CustomerRestController {
 //        return customerService.getCustomerInfo(customerId);
 //    }
 
-    @RequestMapping("/test/{testid}")
+    @RequestMapping(value="/test/{testid}", method = RequestMethod.GET, headers =  "Accept=application/json")
     @ResponseBody
     public String test(@PathVariable String testid) {
         dbConnUtil.checkDatabaseConnection();
@@ -36,7 +36,7 @@ public class CustomerRestController {
 
     @RequestMapping(value =  "/insert/profile", method = RequestMethod.POST, headers =  "Accept=application/json")
     @ResponseBody
-    public void updateScenarioMapping(@RequestBody Profile profile) throws Exception {
+    public void insertNewProfileData(@RequestBody Profile profile) throws Exception {
         System.out.println("insert profile begins ...");
         try {
              profileRepository.save(profile);
